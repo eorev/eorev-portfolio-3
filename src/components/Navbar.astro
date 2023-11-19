@@ -1,5 +1,5 @@
 ---
-
+import favicon from "../../public/favicon.svg";
 ---
 
 <div class='nav--container'>
@@ -8,62 +8,62 @@
       <di class='name'>Ethan Orevillo</di>
     </div>
     <div class='page--navigation__container'>
-      <a href=''>Page 1</a>
-      <a href=''>Page 2</a>
-      <a href=''>Page 3</a>
+      <a href=''>what I do</a>
+      <a href=''>how I do it</a>
+      <a href=''>where I do it</a>
+      <a href=''>the extras</a>
     </div>
     <div class='nav--bottom__socials'>
-      <a href=''><img src='' alt='github' /></a>
-      <a href=''><img src='' alt='linkedin' /></a>
-      <a href=''><img src='' alt='' /></a>
+      <a href=''><h1>filler</h1></a>
+      <a href=''><h1>filler</h1></a>
     </div>
   </div>
 </div>
 <style>
   .nav--container {
-    display: inline-block;
-    box-sizing: border-box;
+    display: flex;
     flex-direction: column;
     padding: 2rem;
-    position: fixed;
-    top: 0px;
-    left: 0px;
     width: 15rem;
-    border-right: 1px solid hsl(var(--primary-800));
     height: 100vh;
     color: white;
+    border-right: 1px solid white;
   }
+
   .nav--inside__row {
     display: flex;
     flex-direction: column;
     height: 100%;
   }
+
   .page--navigation__container {
-    display: block;
-    list-style-type: none;
+    display: flex;
+    flex-direction: column;
   }
+
   .page--navigation__container a {
     color: rgb(255, 255, 255);
     padding: 10px 0px;
     display: flex;
   }
+
   .name {
     font-weight: 600;
+    font-size: 24px;
     padding: 10px 0px;
   }
+
   .nav--bottom__socials {
     margin-top: auto;
-    color: rgb(204, 204, 204);
     display: flex;
-    flex-direction: row;
-    -webkit-box-align: center;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center; /* Center items horizontally */
     padding: 1rem 0px;
+    color: rgb(204, 204, 204);
   }
+
   .nav--bottom__socials a {
-    width: 20px;
-    height: 20px;
+    margin: 0 10px; /* Add some horizontal space between links */
     cursor: pointer;
     color: rgb(204, 204, 204);
   }
