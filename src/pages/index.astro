@@ -1,12 +1,13 @@
 ---
+// index.astro
 import Layout from "../layouts/Layout.astro";
 import Card from "../components/Card.astro";
-import Navbar from "../components/Navbar.astro";
+import MainContent from "../components/MainContent.jsx";
 ---
 
 <Layout title="Ethan's Portfolio">
   <main>
-    <Navbar />
+    <MainContent client:load />
   </main>
 </Layout>
 

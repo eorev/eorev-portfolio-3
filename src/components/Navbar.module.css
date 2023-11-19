@@ -1,31 +1,4 @@
----
-import favicon from "../../public/favicon.svg";
-
-const emitNavClick = (page: any) => {
-  const event = new CustomEvent("navclick", { detail: page });
-  window.dispatchEvent(event);
-};
----
-
-<div class='nav--container'>
-  <div class='nav--inside__row'>
-    <div class='nav--top__info'>
-      <di class='name'>Ethan Orevillo</di>
-    </div>
-    <div class='page--navigation__container'>
-      <a href=''>what I do</a>
-      <a href=''>how I do it</a>
-      <a href=''>where I do it</a>
-      <a href=''>the extras</a>
-    </div>
-    <div class='nav--bottom__socials'>
-      <a href=''><h1>filler</h1></a>
-      <a href=''><h1>filler</h1></a>
-    </div>
-  </div>
-</div>
-<style>
-  .nav--container {
+.nav--container {
     display: flex;
     flex-direction: column;
     padding: 2rem;
@@ -72,4 +45,3 @@ const emitNavClick = (page: any) => {
     cursor: pointer;
     color: rgb(204, 204, 204);
   }
-</style>
