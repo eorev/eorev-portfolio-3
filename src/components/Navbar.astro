@@ -1,0 +1,70 @@
+---
+
+---
+
+<div class='nav--container'>
+  <div class='nav--inside__row'>
+    <div class='nav--top__info'>
+      <di class='name'>Ethan Orevillo</di>
+    </div>
+    <div class='page--navigation__container'>
+      <a href=''>Page 1</a>
+      <a href=''>Page 2</a>
+      <a href=''>Page 3</a>
+    </div>
+    <div class='nav--bottom__socials'>
+      <a href=''><img src='' alt='github' /></a>
+      <a href=''><img src='' alt='linkedin' /></a>
+      <a href=''><img src='' alt='' /></a>
+    </div>
+  </div>
+</div>
+<style>
+  .nav--container {
+    display: inline-block;
+    box-sizing: border-box;
+    flex-direction: column;
+    padding: 2rem;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 15rem;
+    border-right: 1px solid hsl(var(--primary-800));
+    height: 100vh;
+    color: white;
+  }
+  .nav--inside__row {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  .page--navigation__container {
+    display: block;
+    list-style-type: none;
+  }
+  .page--navigation__container a {
+    color: rgb(255, 255, 255);
+    padding: 10px 0px;
+    display: flex;
+  }
+  .name {
+    font-weight: 600;
+    padding: 10px 0px;
+  }
+  .nav--bottom__socials {
+    margin-top: auto;
+    color: rgb(204, 204, 204);
+    display: flex;
+    flex-direction: row;
+    -webkit-box-align: center;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 1rem 0px;
+  }
+  .nav--bottom__socials a {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    color: rgb(204, 204, 204);
+  }
+</style>
