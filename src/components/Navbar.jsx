@@ -1,7 +1,7 @@
 import React from "react";
 import "./Navbar.css";
 
-export default function Navbar({ setCurrentView }) {
+export default function Navbar({ setCurrentView, currentView }) {
   return (
     <div class='nav--container'>
       <div class='nav--inside__row'>
@@ -9,13 +9,25 @@ export default function Navbar({ setCurrentView }) {
           <di class='name'>Ethan Orevillo</di>
         </div>
         <div className='page--navigation__container'>
-          <a href='#' onClick={() => setCurrentView("whatido")}>
+          <a
+            href='#'
+            onClick={() => setCurrentView("whatido")}
+            className={currentView === "whatido" ? "active-link" : ""}
+          >
             what I do
           </a>
-          <a href='#' onClick={() => setCurrentView("whereidoit")}>
+          <a
+            href='#'
+            onClick={() => setCurrentView("whereidoit")}
+            className={currentView === "whereidoit" ? "active-link" : ""}
+          >
             where I do it
           </a>
-          <a href='#' onClick={() => setCurrentView("theextras")}>
+          <a
+            href='#'
+            onClick={() => setCurrentView("theextras")}
+            className={currentView === "theextras" ? "active-link" : ""}
+          >
             the extras
           </a>
         </div>

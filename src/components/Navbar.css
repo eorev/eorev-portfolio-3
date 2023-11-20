@@ -45,3 +45,18 @@
     cursor: pointer;
     color: rgb(204, 204, 204);
   }
+
+  .active-link {
+    position: relative;
+  }
+  
+  .active-link::after {
+    content: "";
+    position: absolute;
+    right: -5px;
+    top: 0;
+    bottom: 0;
+    width: 3px; /* Width of the bar */
+    background-color: #ff65b2; /* Color of the bar */
+  }
+  

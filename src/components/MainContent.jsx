@@ -35,7 +35,7 @@ function MainContent() {
 
   return (
     <>
-      <Navbar setCurrentView={setCurrentView} />
+      <Navbar setCurrentView={setCurrentView} currentView={currentView} />
       <div className={`content--area ${isFading ? "fade-out" : "fade-in"}`}>
         {renderView()}
       </div>
