@@ -1,0 +1,11 @@
+.content--area {
+    color: white;
+    transition: opacity 0.2s ease-in-out;
+    opacity: 1;
+    padding: 2rem;
+  }
+  
+  .content--area.fade-out {
+    opacity: 0;
+  }
+  

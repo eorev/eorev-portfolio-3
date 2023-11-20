@@ -12,9 +12,6 @@ export default function Navbar({ setCurrentView }) {
           <a href='#' onClick={() => setCurrentView("whatido")}>
             what I do
           </a>
-          <a href='#' onClick={() => setCurrentView("howidoit")}>
-            how I do it
-          </a>
           <a href='#' onClick={() => setCurrentView("whereidoit")}>
             where I do it
           </a>
@@ -23,11 +20,8 @@ export default function Navbar({ setCurrentView }) {
           </a>
         </div>
         <div class='nav--bottom__socials'>
-          <a href=''>
-            <h1>filler</h1>
-          </a>
-          <a href=''>
-            <h1>filler</h1>
+          <a href='https://github.com/eorev'>
+            <img src='/github-mark-white.svg' alt='github' />
           </a>
         </div>
       </div>
